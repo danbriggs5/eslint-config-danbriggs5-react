@@ -11,6 +11,7 @@ module.exports = {
 	extends: [...base.extends.map(require.resolve), 'plugin:react/recommended'],
 	parserOptions: Object.assign({}, base.parserOptions, { jsx: true }),
 	plugins: ['import', 'react'],
+	rules: base.rules,
 	settings: {
 		react: {
 			version: '16.3',
