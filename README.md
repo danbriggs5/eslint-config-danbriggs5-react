@@ -10,6 +10,7 @@ npm install --save-dev --save-exact eslint-config-danbriggs5-react
 npm install --save-dev --save-exact eslint@5.16.0
 npm install --save-dev --save-exact eslint-plugin-import@2.16.0
 npm install --save-dev --save-exact eslint-plugin-react@7.13.0
+npm install --save-dev --save-exact eslint-plugin-react-hooks@1.6.1
 ```
 
 ## Sample usage

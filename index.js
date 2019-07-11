@@ -10,11 +10,14 @@ module.exports = {
 	// need to install it as a peer-dep. Better to add it manually.
 	extends: [...base.extends.map(require.resolve), 'plugin:react/recommended'],
 	parserOptions: Object.assign({}, base.parserOptions, { jsx: true }),
-	plugins: ['import', 'react'],
-	rules: base.rules,
+	plugins: ['import', 'react', 'react-hooks'],
+	rules: Object.assign({}, base.rules, {
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'error',
+	}),
 	settings: {
 		react: {
-			version: '16.3',
+			version: '16.8',
 		},
 	},
 };
